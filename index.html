@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fitness Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="full">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src= "logo1.png">
+             </div>
+             <div class="brand">
+                 <h3>Fit<span>Flex</span></h3>
+             </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closeMenu()"></i>
+                <ul>
+                    <a href="#"><li>HOME</li></a>
+                    <a href="#"><li>FEATURES</li></a>
+                    <a href="#"><li>DIET</li></a>
+                    <a href="#"><li>LOGIN</li></a>
+                </ul>
+               
+                <button type="button" class="btn">SIGN UP</button>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+         </div>
+         <div class="banner-title">
+             <h1>Keep Going <span>You are<br> Stronger than</span> you Think</h1>
+             <button type="button" class="btn">LET'S GO</button>
+         </div>
+         <div class="vertical-bar">
+             <div class="search-icons">
+                <i class="fa fa-th-list"></i>
+                <i class="fa fa-search" ></i>
+
+             </div>
+             <div class="social-icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google"></i>
+             </div>
+
+         </div>
+         <div class="notification">
+             <div class="clock">
+                <button type="button" class="btn">Date & Time</button>
+                 <i class="fa fa-calendar" aria-hidden="true"></i>
+                 <i class="fa fa-clock-o" aria-hidden="true"></i>
+            </div>
+             
+         </div>
+    </div>
+    <script>
+        var show = document.getElementById("nav-links")
+        function showMenu(){
+            show.style.right = "0";
+        }
+        function closeMenu(){
+            show.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
